@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./marketing-online-strategy-with-drawings.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    
+    font-family: 'Poppins', sans-serif;
+    
+}
+caption {
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(42, 34, 34);
+    text-decoration: underline;
+    border: 2px double;
+    border-radius: 10px;
+}
+
+table, tr,th, td {
+    border: 2px solid white;
+    border-collapse: collapse;
+    
+}
+
+th {
+    background-color: #666;
+    color: white;
+}
+
+th, td {
+    padding: 5px;
+}
+
+th:first-child{
+    width: 100px;
+    text-align: left;
+}
+th:nth-child(2) {
+    width: 250px;
+    text-align: left;
+}
+th:nth-child(3), td:nth-child(3) {
+    text-align: center;
+    width: 70px;
+}
+
+th:nth-child(n+4), td:nth-child(n+4) {
+    text-align: right;
+    width: 100px;
+}
+
+td:last-child, th:last-child {
+    width: 75px;
+}
+td:last-child i {
+    padding-right: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(249, 247, 247);
+}
+
+tfoot td {
+    text-align: right;
+    background-color: #888;
+    color: white;
+    font-weight: 600;
+}
+
+.bottom {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    margin-top: 10px;
+}
+.button a {
+    display: inline-block;
+    padding: 10px;
+    height: 40px;
+    background-color: coral;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+.button span {
+color: white;
+}
+
+@media (max-width: 800px) {
+    table, tr,th, td {
+        width: 10%;
+        font-size: 12px;
+        margin: auto;
+    } 
+    .bottom {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .button a {
+        font-size: 12px;
+    }
+
+}
